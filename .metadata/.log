@@ -796,3 +796,74 @@ Caused by: java.net.SocketTimeoutException: Read timed out
 
 !ENTRY org.eclipse.core.net 1 0 2019-04-18 14:47:45.560
 !MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:50:12.880
+!MESSAGE System property http.proxyHost is set to 10.136.0.248 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:50:12.881
+!MESSAGE System property http.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:50:12.881
+!MESSAGE System property https.proxyHost is set to 10.136.0.248 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:50:12.882
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:50:44.355
+!MESSAGE System property http.proxyHost is set to 10.136.0.248 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:50:44.356
+!MESSAGE System property http.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:50:44.357
+!MESSAGE System property https.proxyHost is set to 10.136.0.248 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:50:44.357
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.egit.core 4 0 2019-04-18 14:50:44.359
+!MESSAGE An exception occurred during push on URI https://github.com/Excilyano/ProjetJEEFormationPOEINiort.git: https://github.com/Excilyano/ProjetJEEFormationPOEINiort.git: authentication not supported
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/Excilyano/ProjetJEEFormationPOEINiort.git: authentication not supported
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:180)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/Excilyano/ProjetJEEFormationPOEINiort.git: authentication not supported
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:533)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:439)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:160)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1346)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:170)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2019-04-18 14:50:44.360
+!MESSAGE Can't connect to any repository: https://github.com/Excilyano/ProjetJEEFormationPOEINiort.git (https://github.com/Excilyano/ProjetJEEFormationPOEINiort.git: authentication not supported)
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:51:36.221
+!MESSAGE System property http.proxyHost is set to 10.136.0.248 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:51:36.221
+!MESSAGE System property http.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:51:36.222
+!MESSAGE System property https.proxyHost is set to 10.136.0.248 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:51:36.222
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:51:40.068
+!MESSAGE System property http.proxyHost is set to 10.136.0.248 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:51:40.069
+!MESSAGE System property http.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:51:40.069
+!MESSAGE System property https.proxyHost is set to 10.136.0.248 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:51:40.070
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.jface.text 2 0 2019-04-18 14:54:17.562
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
