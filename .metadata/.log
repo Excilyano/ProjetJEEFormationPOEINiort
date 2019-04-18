@@ -716,3 +716,71 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 4 0 2019-04-18 14:38:57.784
+!MESSAGE https://github.com/Excilyano/ProjetJEEFormationPOEINiort.git: cannot open git-upload-pack
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/Excilyano/ProjetJEEFormationPOEINiort.git: cannot open git-upload-pack
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:254)
+	at org.eclipse.jgit.api.CloneCommand.fetch(CloneCommand.java:302)
+	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:200)
+	at org.eclipse.egit.core.op.CloneOperation.run(CloneOperation.java:180)
+	at org.eclipse.egit.ui.internal.clone.AbstractGitCloneWizard.executeCloneOperation(AbstractGitCloneWizard.java:486)
+	at org.eclipse.egit.ui.internal.clone.AbstractGitCloneWizard.access$2(AbstractGitCloneWizard.java:479)
+	at org.eclipse.egit.ui.internal.clone.AbstractGitCloneWizard$6.run(AbstractGitCloneWizard.java:458)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/Excilyano/ProjetJEEFormationPOEINiort.git: cannot open git-upload-pack
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:600)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:362)
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:138)
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:124)
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1271)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:243)
+	... 7 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(Unknown Source)
+	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.doTunneling(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(Unknown Source)
+	at org.eclipse.jgit.transport.http.JDKHttpConnection.getResponseCode(JDKHttpConnection.java:115)
+	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:207)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:514)
+	... 12 more
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:46:09.364
+!MESSAGE System property http.proxyHost is set to 10.136.0.248 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:46:09.365
+!MESSAGE System property http.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:46:09.366
+!MESSAGE System property https.proxyHost is set to 10.136.0.248 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:46:09.366
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:46:31.372
+!MESSAGE System property http.proxyHost is set to 10.136.0.248 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:46:31.374
+!MESSAGE System property http.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:46:31.374
+!MESSAGE System property https.proxyHost is set to 10.136.0.248 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:46:31.375
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.equinox.security 1 0 2019-04-18 14:46:40.165
+!MESSAGE New keyring password generated. 
