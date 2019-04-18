@@ -784,3 +784,15 @@ Caused by: java.net.SocketTimeoutException: Read timed out
 
 !ENTRY org.eclipse.equinox.security 1 0 2019-04-18 14:46:40.165
 !MESSAGE New keyring password generated. 
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:47:45.558
+!MESSAGE System property http.proxyHost is set to 10.136.0.248 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:47:45.558
+!MESSAGE System property http.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:47:45.559
+!MESSAGE System property https.proxyHost is set to 10.136.0.248 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-18 14:47:45.560
+!MESSAGE System property https.proxyPort is set to 8080 but should not be set.
