@@ -1,0 +1,13 @@
+<c:if test="${not empty role }"><div>Connecté en tant que : ${role }</div><hr></c:if>
+<div>
+	<a href="Accueil">Accueil</a>
+	<a href="Carte">Notre carte</a>
+	<c:if test="${empty role }">
+		<a href="Connexion">Connexion</a>
+		<a href="Inscription">Inscription</a>
+	</c:if>
+	<c:if test="${not empty role }">
+		<a href="MonCompte">Mon compte</a>
+		<a href="Deconnexion">Deconnexion</a>
+	</c:if>
+</div>
